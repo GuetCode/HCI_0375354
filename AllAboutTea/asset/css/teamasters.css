@@ -1,0 +1,36 @@
+.tea-masters-section {
+    background: var(--tea-red-800);
+}
+
+.master-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.master-card {
+    display: grid;
+    gap: 22px;
+    grid-template-columns: 180px minmax(0, 1fr);
+    overflow: hidden;
+}
+
+.master-card img {
+    border: 1px solid var(--line-gold);
+    border-radius: var(--radius);
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.master-card h3 {
+    font-size: 1.45rem;
+}
+
+.master-card a {
+    border: 1px solid rgba(255, 211, 106, 0.42);
+    border-radius: 999px;
+    color: var(--tea-gold);
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 14px;
+    text-decoration: none;
+}

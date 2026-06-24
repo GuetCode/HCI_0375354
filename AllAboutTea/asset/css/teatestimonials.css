@@ -1,0 +1,23 @@
+.testimonials-section {
+    background: linear-gradient(135deg, rgba(61, 5, 5, 0.96), rgba(18, 50, 42, 0.86)), var(--tea-red-900);
+}
+
+.testimonial-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.testimonial-card img {
+    border: 1px solid var(--line-gold);
+    border-radius: 50%;
+    height: 72px;
+    margin-bottom: 18px;
+    object-fit: cover;
+    width: 72px;
+}
+
+.testimonial-card #testimonial_1_rating,
+.testimonial-card #testimonial_2_rating {
+    color: var(--tea-gold);
+    font-weight: 700;
+    margin-top: 14px;
+}

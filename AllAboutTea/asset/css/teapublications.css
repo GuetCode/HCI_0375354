@@ -1,0 +1,65 @@
+.publications-section,
+.publication-listing-section {
+    background: var(--tea-red-800);
+}
+
+.publication-page-hero {
+    background: radial-gradient(circle at 20% 25%, rgba(255, 211, 106, 0.18), transparent 32%), var(--tea-red-800);
+}
+
+.journal-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.journal-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.journal-card .btn {
+    margin-top: auto;
+}
+
+.journal-date {
+    color: var(--tea-gold) !important;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.publication-summary {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.publication-summary p {
+    margin-bottom: 12px;
+}
+
+.publication-detail-content {
+    border-top: 1px solid var(--line-gold);
+    display: none;
+    margin-top: 22px;
+    padding-top: 22px;
+}
+
+body.publication-detail-mode .journal-grid {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+body.publication-detail-mode [data-publication-card] {
+    display: none;
+}
+
+body.publication-detail-mode [data-publication-card].is-selected {
+    display: block;
+}
+
+body.publication-detail-mode [data-publication-card].is-selected .publication-detail-content {
+    display: block;
+}
+
+body.publication-detail-mode [data-publication-card].is-selected .publication-summary .btn {
+    display: none;
+}

@@ -1,0 +1,15 @@
+.methodology-section {
+    background: radial-gradient(circle at 80% 20%, rgba(255, 211, 106, 0.12), transparent 30%), #210505;
+}
+
+.method-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.method-card span {
+    color: var(--tea-gold);
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}

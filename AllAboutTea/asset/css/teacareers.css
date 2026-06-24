@@ -1,0 +1,94 @@
+.careers-page,
+.career-listing-section {
+    background: radial-gradient(circle at 88% 20%, rgba(255, 211, 106, 0.13), transparent 28%), var(--tea-red-900);
+}
+
+.career-page-hero {
+    background: radial-gradient(circle at 20% 25%, rgba(255, 211, 106, 0.18), transparent 32%), var(--tea-red-800);
+}
+
+.career-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.career-card {
+    display: block;
+}
+
+.career-summary {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.career-summary .btn {
+    margin-top: auto;
+}
+
+.career-summary p:nth-of-type(2),
+.career-summary p:nth-of-type(3) {
+    color: var(--tea-gold);
+    font-weight: 700;
+}
+
+.career-detail-content {
+    border-top: 1px solid var(--line-gold);
+    display: none;
+    margin-top: 24px;
+    padding-top: 24px;
+}
+
+.career-detail-content .btn {
+    margin-top: 22px;
+}
+
+body.career-detail-mode .career-grid {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+body.career-detail-mode .career-page-hero {
+    display: none;
+}
+
+body.career-detail-mode .career-listing-section {
+    min-height: auto;
+    padding-bottom: clamp(70px, 8vw, 96px);
+    padding-top: clamp(70px, 8vw, 96px);
+}
+
+body.career-detail-mode [data-career-card] {
+    display: none;
+}
+
+body.career-detail-mode [data-career-card].is-selected {
+    display: block;
+    height: auto;
+    min-height: auto;
+    width: 100%;
+}
+
+body.career-detail-mode [data-career-card].is-selected .career-summary {
+    display: block;
+    min-height: 0;
+}
+
+body.career-detail-mode [data-career-card].is-selected .career-summary p,
+body.career-detail-mode [data-career-card].is-selected .career-summary .btn {
+    display: none;
+}
+
+body.career-detail-mode [data-career-card].is-selected .career-summary h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.08;
+    margin-bottom: 0;
+}
+
+body.career-detail-mode [data-career-card].is-selected .career-detail-content {
+    display: block;
+    height: auto;
+    min-height: 0;
+}
+
+body.career-detail-mode [data-career-card].is-selected .career-detail-content .field-label:first-child {
+    margin-top: 0;
+}
