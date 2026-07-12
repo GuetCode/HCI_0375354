@@ -1,2 +1,2 @@
-# HCI_0375354
-My HTML Site - Public project for sharing with friends
+# HCI (WBL) Assignment 2 _ April 2026
+Our HTML Site 
